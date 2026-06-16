@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Tooth Engineers — reach out with questions, collaboration ideas, or general inquiries." />
+  <title>Contact | Tooth Engineers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════ -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-icon">🦷</span> Tooth Engineers</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="articles.html" class="has-dropdown">Articles</a>
+          <div class="dropdown">
+            <a href="articles.html?cat=announcements">Announcements</a>
+            <a href="articles.html?cat=innovation">Dental Innovation</a>
+            <a href="articles.html?cat=experiments">Dental Science Experiments</a>
+            <a href="articles.html?cat=science">Dental Science In Focus</a>
+            <a href="articles.html?cat=health">Oral Health Trends</a>
+            <a href="articles.html?cat=vitamins">Vitamins &amp; Minerals</a>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="articles.html" class="btn btn-outline btn-sm">Read Articles</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get In Touch</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ══ PAGE HERO ════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Contact</span>
+    </div>
+    <h1>Get In Touch</h1>
+    <p>Questions, collaboration ideas, or just want to say hello? Fill out the form and someone from our team will reply as soon as possible.</p>
+  </div>
+</section>
+
+<!-- ══ CONTACT LAYOUT ═══════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- ── Info side ── -->
+      <div class="contact-info">
+        <h3>We'd Love to Hear From You</h3>
+        <p>
+          Whether you have a question about our content, want to collaborate, are interested in contributing an article, or have feedback — just fill out the form and someone from our team will get back to you as soon as possible.
+        </p>
+
+        <div class="contact-channels">
+          <div class="contact-channel">
+            <span class="contact-channel-icon">📸</span>
+            <div>
+              <strong>Social Media</strong>
+              <a href="https://www.instagram.com/toothengineers/" target="_blank" rel="noopener">@toothengineers on Instagram</a>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/profile.php?id=61561686900478" target="_blank" rel="noopener" class="contact-channel">
+            <span class="contact-channel-icon">👥</span>
+            <div>
+              <strong>Facebook</strong>
+              Tooth Engineers on Facebook
+            </div>
+          </a>
+          <a href="https://www.youtube.com/@ToothEngineers" target="_blank" rel="noopener" class="contact-channel">
+            <span class="contact-channel-icon">▶️</span>
+            <div>
+              <strong>YouTube</strong>
+              @ToothEngineers
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/company/tooth-engineers/" target="_blank" rel="noopener" class="contact-channel">
+            <span class="contact-channel-icon">💼</span>
+            <div>
+              <strong>LinkedIn</strong>
+              Tooth Engineers
+            </div>
+          </a>
+          <a href="https://medium.com/@innovate_93668" target="_blank" rel="noopener" class="contact-channel">
+            <span class="contact-channel-icon">✍️</span>
+            <div>
+              <strong>Medium</strong>
+              @innovate_93668
+            </div>
+          </a>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;background:var(--light);border-radius:var(--radius);border:1px solid var(--border);">
+          <h4 style="margin-bottom:.5rem;font-size:.95rem;">Want to Contribute?</h4>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.7;">
+            We welcome contributions from dental professionals, researchers, and science communicators. If you'd like to write for Tooth Engineers, mention it in your message and tell us about your background.
+          </p>
+        </div>
+      </div>
+
+      <!-- ── Form side ── -->
+      <div class="contact-form-card">
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Dr. Jane Smith" required />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic…</option>
+              <option value="general">General Inquiry</option>
+              <option value="collaboration">Collaboration / Partnership</option>
+              <option value="contribute">Article Contribution</option>
+              <option value="shop">Shop / Product Inquiry</option>
+              <option value="press">Press / Media</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help…" required></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          <div class="form-success" id="formSuccess">
+            ✅ Thanks! We'll be in touch soon.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOCIAL STRIP ══════════════════════════ -->
+<div class="social-strip">
+  <div class="container social-inner">
+    <span style="font-size:.85rem;color:var(--muted);font-weight:600;">Follow us:</span>
+    <a href="https://www.instagram.com/toothengineers/" target="_blank" rel="noopener" class="social-link"><span class="social-icon">📸</span> Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=61561686900478" target="_blank" rel="noopener" class="social-link"><span class="social-icon">👥</span> Facebook</a>
+    <a href="https://www.tiktok.com/@toothengineers" target="_blank" rel="noopener" class="social-link"><span class="social-icon">🎵</span> TikTok</a>
+    <a href="https://www.youtube.com/@ToothEngineers" target="_blank" rel="noopener" class="social-link"><span class="social-icon">▶️</span> YouTube</a>
+    <a href="https://medium.com/@innovate_93668" target="_blank" rel="noopener" class="social-link"><span class="social-icon">✍️</span> Medium</a>
+    <a href="https://www.linkedin.com/company/tooth-engineers/" target="_blank" rel="noopener" class="social-link"><span class="social-icon">💼</span> LinkedIn</a>
+  </div>
+</div>
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span>🦷</span> Tooth Engineers</a>
+        <p>Engineering smiles by combining the disciplines of dentistry and bioengineering.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/toothengineers/" target="_blank" rel="noopener">📸</a>
+          <a href="https://www.facebook.com/profile.php?id=61561686900478" target="_blank" rel="noopener">👥</a>
+          <a href="https://www.tiktok.com/@toothengineers" target="_blank" rel="noopener">🎵</a>
+          <a href="https://www.youtube.com/@ToothEngineers" target="_blank" rel="noopener">▶️</a>
+          <a href="https://www.linkedin.com/company/tooth-engineers/" target="_blank" rel="noopener">💼</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Articles</h4>
+        <ul>
+          <li><a href="articles.html?cat=innovation">Dental Innovation</a></li>
+          <li><a href="articles.html?cat=science">Dental Science In Focus</a></li>
+          <li><a href="articles.html?cat=health">Oral Health Trends</a></li>
+          <li><a href="articles.html?cat=experiments">Science Experiments</a></li>
+          <li><a href="articles.html?cat=vitamins">Vitamins &amp; Minerals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; <span id="year"></span> | Tooth Engineers. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
